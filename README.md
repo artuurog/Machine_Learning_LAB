@@ -84,10 +84,12 @@ Smaller models are faster and require fewer resources; larger models are general
 
 | Model Name | Hugging Face Page | Size (Parameters) |
 |-----------|------------------|-------------------|
-| `model-name-1` | https://huggingface.co/organization/model-name-1 | 7B |
-| `model-name-2` | https://huggingface.co/organization/model-name-2 | 3B |
-| `model-name-3` | https://huggingface.co/organization/model-name-3 | 1.3B |
-| `model-name-4` | https://huggingface.co/organization/model-name-4 | 350M |
+| `` | https://huggingface.co/organization/model-name-1 | 7B |
+| `Molmo2-8B` | https://huggingface.co/allenai/Molmo2-8B?inference_provider=publicai | 8B |
+| `Qwen2.5-VL` | https://huggingface.co/Qwen/Qwen2.5-VL-72B-Instruct?inference_provider=hyperbolic | 72B |
+| `SmolVLM` | https://huggingface.co/HuggingFaceTB/SmolVLM-Instruct| 2B |
+| `Kimi-K2.5` | https://huggingface.co/moonshotai/Kimi-K2.5?inference_provider=novita| 171B |
+
 
 ---
 
