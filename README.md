@@ -56,7 +56,11 @@ Students are encouraged to extend or modify the provided materials as part of th
 
 
 ## Colab tutorial 
-how to use the Colab notebook 
+The Colab notebook can be accessed here
+It is an example of Python implementation where the MuJoCo simulation is opened and a VLM is asked to do some basic tasks taking as inputs: 
+- an image of the scene,
+- a textual prompt
+
 
 ## MuJoCo simulation
 [Here](https://github.com/artuurog/GoFa_MuJoCo_sim/tree/main) you can find a MuJoCo simulation environment with an ABB GoFa robot for tabletop manipulation.
