@@ -57,20 +57,16 @@ You can think of it as a **password for your program** that allows it to access 
 Most projects expect the API key to be stored as an **environment variable**.
 
 #### On Linux / macOS
-export HUGGINGFACE_API_KEY="your_token_here"
+`export HUGGINGFACE_API_KEY="your_token_here"`
 
 #### On Windows
-setx HUGGINGFACE_API_KEY "your_token_here"
+`setx HUGGINGFACE_API_KEY "your_token_here"`
 
 ---
 ## Available Vision-Language Models
 
 Below is a non-exhaustive list of Hugging Face models that can be used with this project.  
 Each entry includes the **model name**, a **link to its Hugging Face page**, and the **model size** (number of parameters).
-
-You can choose a model based on your hardware constraints and performance needs.  
-Smaller models are faster and require fewer resources; larger models are generally more capable but slower.
-
 
 ### Model List
 
