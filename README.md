@@ -8,7 +8,7 @@ how to use the Colab notebook
 <img src="https://github.com/artuurog/Machine_Learning_LAB/blob/main/img/mujoco_scene.png" align="center" width="30%" height="30%">
 
 The model consists of an XML file and various .STL meshes of the robot parts.
-If you want to modify the scene, refer to the [MuJoCo XML Reference](https://mujoco.readthedocs.io/en/stable/XMLreference.html)
+If you want to modify the `scene.xml` file, refer to the [MuJoCo XML Reference](https://mujoco.readthedocs.io/en/stable/XMLreference.html)
 
 
 ## Getting a Hugging Face API Key
