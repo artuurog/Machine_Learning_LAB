@@ -76,7 +76,6 @@ Smaller models are faster and require fewer resources; larger models are general
 
 | Model Name | Hugging Face Page | Size (Parameters) |
 |-----------|------------------|-------------------|
-| `` | https://huggingface.co/organization/model-name-1 | 7B |
 | `Molmo2-8B` | https://huggingface.co/allenai/Molmo2-8B?inference_provider=publicai | 8B |
 | `Qwen2.5-VL` | https://huggingface.co/Qwen/Qwen2.5-VL-72B-Instruct?inference_provider=hyperbolic | 72B |
 | `SmolVLM` | https://huggingface.co/HuggingFaceTB/SmolVLM-Instruct| 2B |
