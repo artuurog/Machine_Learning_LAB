@@ -5,7 +5,7 @@ how to use the Colab notebook
 
 ## MuJoCo simulation
 [Here](https://github.com/artuurog/GoFa_MuJoCo_sim/tree/main) you can find a MuJoCo simulation environment with an ABB GoFa robot for tabletop manipulation.
-<img src="https://github.com/artuurog/Machine_Learning_LAB/blob/main/img/mujoco_scene.png" align="center" width="250" height="444">
+<img src="https://github.com/artuurog/Machine_Learning_LAB/blob/main/img/mujoco_scene.png" align="center" width="50%" height="50%">
 
 
 ## Getting a Hugging Face API Key
