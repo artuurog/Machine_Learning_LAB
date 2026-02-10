@@ -4,7 +4,11 @@
 how to use the Colab notebook 
 
 ## How to get an API key on HuggingFace
-tutorial breve su come ottenere una chiave API gratuitamente dal sito HF
+1. First of all, go to [https://huggingface.co/](https://huggingface.co/)
+2. Log In with your username and password
+3. Go to the section [Access Tokens](https://huggingface.co/settings/tokens)
+4. 
+
 
 ## VLMs you can use
 possibili modelli da usare con diverse caratteristiche e dimensioni
