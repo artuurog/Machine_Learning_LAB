@@ -9,7 +9,7 @@ The main objectives of the project are:
 
 ## Index
   
-- [Colab notebook](#installation)  
+- [Colab notebook](https://github.com/artuurog/Machine_Learning_LAB/blob/main/README.md#colab-tutorial)  
 - [API keys on Huggingface](#usage)  
 - [Models](#available-hugging-face-models)  
 - [References](#references)  
