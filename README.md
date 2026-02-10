@@ -7,7 +7,7 @@ how to use the Colab notebook
 1. First of all, go to [https://huggingface.co/](https://huggingface.co/)
 2. Log In with your username and password
 3. Go to the section [Access Tokens](https://huggingface.co/settings/tokens)
-4. 
+![Create new token](https://github.com/artuurog/Machine_Learning_LAB/blob/main/img/create_new_token.png)
 
 
 ## VLMs you can use
