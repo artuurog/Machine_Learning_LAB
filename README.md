@@ -1,5 +1,52 @@
 # VLMs & Robots
 
+This project focuses on the use of **Vision-Language Models (VLMs)** and **Robotics**, with the goal of understanding how these algorithms can be used to perceive, reason, and act in the physical world.
+
+The main objectives of the project are:
+- to teach a robot pick-and-place operations through textual instructions,
+- to implement the obtained task plan both in simulation and in real world experiments on an ABB GoFa robot,
+- to bridge theory and practice through hands-on experimentation.
+
+---
+
+## Project Structure and Phases
+
+The project is organized into the following phases:
+
+1. **Background and Setup**  
+   Define the problem, tools, and software environment. Installation and configuration of required libraries and frameworks.
+   Clearly identify the inputs and outputs of each module and function you will use.
+
+3. **Perception**  
+   Processing sensor data (e.g. RGB images, robot states) to extract meaningful information about the environment.
+
+4. **Reasoning and Decision-Making**  
+   Applying VLMs to interpret perceptual inputs and decide which actions the robot should take. The model will receive a textual instruction from the human user, and generate an action plan accordingly.
+
+5. **Action and Control**  
+   Translating decisions ("pick red cube") into robot actions, such as motion ("x y z") or manipulation ("open/close gripper").
+
+6. **Experiments**
+   Test the action plan on the simulated robot. Try it on the real robot once you are satisfied with your simulations.
+
+8. **Evaluation and Analysis**  
+   Testing the system, analyzing performance, and discussing limitations and possible improvements.
+   
+---
+
+## Materials Provided
+
+The following materials are provided:
+
+- **Colab notebook** to show an example of Python implementation for a MuJoCo simulation
+- **List of models** you can work with using API keys provided by Huggingface Inference Providers
+- **Documentation and tutorials** explaining key concepts and implementation details  
+
+Students are encouraged to extend or modify the provided materials as part of the project.
+
+---
+
+
 ## Colab tutorial
 how to use the Colab notebook 
 
