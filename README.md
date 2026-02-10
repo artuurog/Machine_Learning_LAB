@@ -3,6 +3,10 @@
 ## Colab tutorial
 how to use the Colab notebook 
 
+## MuJoCo simulation
+Here you can find a MuJoCo simulation environment with an ABB GoFa robot for tabletop manipulation:
+[GoFa MuJoCo sim](https://github.com/artuurog/GoFa_MuJoCo_sim/tree/main)
+
 ## Getting a Hugging Face API Key
 
 This project uses models hosted on **Hugging Face**, a platform that provides access to many AI models through an API.  
@@ -19,8 +23,6 @@ You can think of it as a **password for your program** that allows it to access 
 
 ⚠️ **Important:**  
 - Do **not** share your API key publicly  
-- Do **not** commit it to GitHub
-
 ---
 
 ### Step-by-step: Create a Hugging Face API key
