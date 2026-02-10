@@ -25,10 +25,10 @@ You can think of it as a **password for your program** that allows it to access 
 - Do **not** share your API key publicly  
 ---
 
-### Step-by-step: Create a Hugging Face API key
+### Create a Hugging Face API key
 
 1. **Create a Hugging Face account**
-   - Go to https://huggingface.co
+   - Go to [https://huggingface.co]
    - Click **Sign Up** (top right)
    - Create an account using email, Google, or GitHub
 
