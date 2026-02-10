@@ -13,7 +13,7 @@ The main objectives of the project are:
 - [MuJoCo simulation environment](https://github.com/artuurog/Machine_Learning_LAB/blob/main/README.md#mujoco-simulation)
 - [API keys on Huggingface](https://github.com/artuurog/Machine_Learning_LAB/blob/main/README.md#getting-a-hugging-face-api-key)  
 - [Models](https://github.com/artuurog/Machine_Learning_LAB/blob/main/README.md#available-vision-language-models)  
-- [References](https://github.com/artuurog/Machine_Learning_LAB/blob/main/README.md#references)  
+- [Resources](https://github.com/artuurog/Machine_Learning_LAB/blob/main/README.md#resources)  
 
 ---
 
