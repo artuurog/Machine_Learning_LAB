@@ -9,8 +9,9 @@ The main objectives of the project are:
 
 ## Index
   
-- [Colab notebook](https://github.com/artuurog/Machine_Learning_LAB/blob/main/README.md#colab-tutorial)  
-- [API keys on Huggingface](#usage)  
+- [Colab notebook](https://github.com/artuurog/Machine_Learning_LAB/blob/main/README.md#colab-tutorial)
+- [MuJoCo simulation environment](https://github.com/artuurog/Machine_Learning_LAB/blob/main/README.md#mujoco-simulation)
+- [API keys on Huggingface](https://github.com/artuurog/Machine_Learning_LAB/blob/main/README.md#getting-a-hugging-face-api-key)  
 - [Models](#available-hugging-face-models)  
 - [References](#references)  
 
