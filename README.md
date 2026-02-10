@@ -62,14 +62,7 @@ export HUGGINGFACE_API_KEY="your_token_here"
 #### On Windows
 setx HUGGINGFACE_API_KEY "your_token_here"
 
-
-
-## VLMs you can use
-possibili modelli da usare con diverse caratteristiche e dimensioni
-- Molmo
-- SmolVLM
-- Qwen-VL
-
+---
 ## Available Vision-Language Models
 
 Below is a non-exhaustive list of Hugging Face models that can be used with this project.  
@@ -78,7 +71,6 @@ Each entry includes the **model name**, a **link to its Hugging Face page**, and
 You can choose a model based on your hardware constraints and performance needs.  
 Smaller models are faster and require fewer resources; larger models are generally more capable but slower.
 
----
 
 ### Model List
 
@@ -90,18 +82,7 @@ Smaller models are faster and require fewer resources; larger models are general
 | `SmolVLM` | https://huggingface.co/HuggingFaceTB/SmolVLM-Instruct| 2B |
 | `Kimi-K2.5` | https://huggingface.co/moonshotai/Kimi-K2.5?inference_provider=novita| 171B |
 
-
----
-
-### How to choose a model
-
-- **≤ 1B parameters**: suitable for laptops and fast experimentation  
-- **1B – 7B parameters**: good trade-off between performance and speed  
-- **> 7B parameters**: higher quality results, but requires more memory and compute  
-
-Refer to the model’s Hugging Face page for detailed documentation, usage examples, and license information.
-
-You can replace the entries above with the specific models supported by this project.
+Explore more models from [this](https://huggingface.co/models?pipeline_tag=image-text-to-text&inference_provider=all&sort=trending) page!
 
 
 ## Resources
