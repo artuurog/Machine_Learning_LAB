@@ -15,6 +15,7 @@ If you want to modify the scene, refer to the [MuJoCo XML Reference](https://muj
 
 This project uses models hosted on **Hugging Face**, a platform that provides access to many AI models through an API.  
 To use these models, you need a **Hugging Face API key** (also called an *access token*).
+
 ---
 
 ### What is an API key?
