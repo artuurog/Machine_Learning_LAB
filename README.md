@@ -7,6 +7,13 @@ The main objectives of the project are:
 - to implement the obtained task plan both in simulation and in real world experiments on an ABB GoFa robot,
 - to bridge theory and practice through hands-on experimentation.
 
+## Index
+  
+- [Colab notebook](#installation)  
+- [API keys on Huggingface](#usage)  
+- [Models](#available-hugging-face-models)  
+- [References](#references)  
+
 ---
 
 ## Project Structure and Phases
@@ -24,7 +31,7 @@ The project is organized into the following phases:
    Applying VLMs to interpret perceptual inputs and decide which actions the robot should take. The model will receive a textual instruction from the human user, and generate an action plan accordingly.
 
 5. **Action and Control**  
-   Translating decisions ("pick red cube") into robot actions, such as motion ("x y z") or manipulation ("open/close gripper").
+   Translating decisions ("pick red cube") into robot actions, such as motion ("x y z") and manipulation ("open/close gripper").
 
 6. **Experiments**
    Test the action plan on the simulated robot. Try it on the real robot once you are satisfied with your simulations.
@@ -47,7 +54,7 @@ Students are encouraged to extend or modify the provided materials as part of th
 ---
 
 
-## Colab tutorial
+## Colab tutorial 
 how to use the Colab notebook 
 
 ## MuJoCo simulation
