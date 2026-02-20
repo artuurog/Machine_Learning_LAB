@@ -15,6 +15,19 @@ Students will design a system where:
 
 The objective is to bridge machine learning, perception, and robot control in a structured workflow.
 
+---
+
+## Learning Objectives
+
+By the end of this lab, you should be able to:
+1. Understand what a Vision-Language Model is and how it works.
+2. Use an API-based AI model from Hugging Face.
+3. Process visual input (RGB image) and textual input.
+4. Convert high-level instructions (e.g., “pick the red cube”) into robot actions.
+5. Execute a task pipeline in simulation.
+6. Deploy the same logic to a real ABB GoFa robot.
+7. Evaluate limitations and failure cases.
+
 ## Index
   
 - [Colab notebook](https://github.com/artuurog/Machine_Learning_LAB/blob/main/README.md#colab-tutorial)
