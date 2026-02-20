@@ -15,8 +15,6 @@ Students will design a system where:
 
 The objective is to bridge machine learning, perception, and robot control in a structured workflow.
 
----
-
 ## Learning Objectives
 
 By the end of this lab, you should be able to:
@@ -28,7 +26,7 @@ By the end of this lab, you should be able to:
 6. Deploy the same logic to a real ABB GoFa robot.
 7. Evaluate limitations and failure cases.
 
-## Index
+## Repo structure
   
 - [Colab notebook](https://github.com/artuurog/Machine_Learning_LAB/blob/main/README.md#colab-tutorial)
 - [MuJoCo simulation environment](https://github.com/artuurog/Machine_Learning_LAB/blob/main/README.md#mujoco-simulation)
@@ -37,29 +35,108 @@ By the end of this lab, you should be able to:
 - [Resources](https://github.com/artuurog/Machine_Learning_LAB/blob/main/README.md#resources)  
 
 ---
+## What is a Vision-Language Model?
 
-## Project Structure and Phases
+A Vision-Language Model (VLM) is a neural network that can process:
+- Images
+- Text
+- (Sometimes video)
+
+It learns a shared representation between vision and language, allowing it to describe images, answer questions about images (_Visual Question Answering_), follow visual instructions (_Visual prompting_), generate action plans based on visual context and many other tasks.
+
+In this lab, the VLM will receive:
+
+**Input**
+- RGB image of the scene
+- Text instruction (e.g., “Pick the blue block and place it on the green block”)
+
+**Output**
+- A structured action plan (e.g., object → position → action sequence)
+
+The action plan has to be converted into low-level control actions.
+
+---
+
+## Project Workflow
 
 The project is organized into the following phases:
 
 1. **Background and Setup**  
-   Define the problem, tools, and software environment. Installation and configuration of required libraries and frameworks.
-   Clearly identify the inputs and outputs of each module and function you will use.
-
-3. **Perception**  
+   - Define the problem, tools, and software environment
+   - Installation and configuration of required libraries and frameworks
+   - Set up MuJoCo simulation
+   - Create a Hugging Face account and get an API key
+   - Define the task (what the robot has to do)
+   
+    
+2. **Perception**  
    Processing sensor data (e.g. RGB images, robot states) to extract meaningful information about the environment.
+   Input:
+    - RGB image (from simulation or real camera)
+      
+    Tasks:
+    
+    - Capture image
+    
+    - Preprocess image with segmentation model, object detection (if necessary)
+    
+    - Format input for the VLM (textual prompt + image)
+    
+    Output:
+    
+    - A function that returns structured scene information.
 
-4. **Reasoning and Decision-Making**  
-   Applying VLMs to interpret perceptual inputs and decide which actions the robot should take. The model will receive a textual instruction from the human user, and generate an action plan accordingly.
+3. **Reasoning**  
+   Applying VLMs to interpret perceptual inputs and decide which actions the robot should take.
+   Input:
 
-5. **Action and Control**  
-   Translating decisions ("pick red cube") into robot actions, such as motion ("x y z") and manipulation ("open/close gripper").
+    - Scene image
+    
+    - User instruction
+    
+    Task:
+    
+    - Query the VLM
+    
+    - Extract structured output
+    
+    Here you may use prompt engineering and force structured JSON outputs to guide the reasoning and constrain response format.
+        
+    Deliverable:
+    
+    - A structured task plan
 
-6. **Experiments**
-   Test the action plan on the simulated robot. Try it on the real robot once you are satisfied with your simulations.
+4. **Action translation**  
+   Translating decisions (_"pick red cube"_) into robot actions, such as motion (_"x y z"_) and manipulation (_"open/close gripper"_).
+   Convert semantic commands into:
+   - Target Cartesian coordinates
 
-8. **Evaluation and Analysis**  
-   Testing the system, analyzing performance, and discussing limitations and possible improvements.
+   - Gripper commands (open/close)
+
+   - Motion sequence
+
+    Deliverable:
+    
+    - Executable motion plan in MuJoCo.
+
+5. **Experiments**
+   Test the action plan on the simulated robot. Try it on the real robot only when you are satisfied with your simulations.
+    - Test success rate
+
+    - Analyze errors
+
+    - Identify failure modes
+
+6. **Real Robot Deployment on ABB GoFa**
+
+Transfer validated pipeline to the physical robot.
+SAFETY AND VALIDATION ARE MANDATORY BEFORE EXECUTION!
+
+7. **Evaluation and Analysis**  
+   - Testing the system, analyzing performance, and discussing limitations and possible improvements
+   - Use different models and compare their performance
+   - Try different requests and check the task plan and robot execution
+   
    
 ---
 
@@ -67,8 +144,8 @@ The project is organized into the following phases:
 
 The following materials are provided:
 
-- **Colab notebook** to show an example of Python implementation for a MuJoCo simulation
-- **List of models** you can work with using API keys provided by Huggingface Inference Providers
+- **Colab notebook** shows an example of Python implementation for a MuJoCo simulation
+- **List of models** you can start using via Huggingface Inference Providers
 - **Documentation and tutorials** explaining key concepts and implementation details  
 
 Students are encouraged to extend or modify the provided materials as part of the project.
@@ -78,9 +155,19 @@ Students are encouraged to extend or modify the provided materials as part of th
 
 ## Colab tutorial 
 The Colab notebook can be accessed here
-It is an example of Python implementation where the MuJoCo simulation is opened and a VLM is asked to do some basic tasks taking as inputs: 
-- an image of the scene,
-- a textual prompt
+It demonstrates:
+
+1. Loading MuJoCo
+
+2. Rendering the scene
+
+3. Capturing an RGB image
+
+4. Sending image + prompt to a VLM
+
+5. Receiving a response
+
+Use it as reference for API formatting, prompt construction, image encoding.
 
 
 ## MuJoCo simulation
@@ -100,8 +187,8 @@ To use these models, you need a **Hugging Face API key** (also called an *access
 
 ### What is an API key?
 
-An API key is a secret string that identifies you when your code communicates with an online service.  
-You can think of it as a **password for your program** that allows it to access Hugging Face models on your behalf.
+An API key is a private authentication token that allows your program to access hosted AI models.
+You can think of it as a password for your program that allows it to access Hugging Face models on your behalf.
 
 ⚠️ **Important:**  
 - Do **not** share your API key publicly  
@@ -161,6 +248,31 @@ Each entry includes the **model name**, a **link to its Hugging Face page**, and
 
 Explore more models from [this](https://huggingface.co/models?pipeline_tag=image-text-to-text&inference_provider=all&sort=trending) page!
 
+## Model Selection Guidelines
+
+Choosing which model to use is not easy. Most of the times, you have to consider different aspects and make a trade-off decision. Here are some general indications
+
+**Smaller models (2B–8B):**
+
+- Faster
+
+- Cheaper
+
+- Less reasoning capability
+
+**Larger models (70B+):**
+
+- Better reasoning
+
+- Slower
+
+- Higher cost
+
+For robotic planning:
+
+Structured output quality is more important than conversational ability. Find the model that generates a good, structured plan that can be easily converted into robot actions.
+
+--- 
 
 ## Resources
 - [Vision Language Models Explained](https://huggingface.co/blog/vlms)
@@ -168,4 +280,12 @@ Explore more models from [this](https://huggingface.co/models?pipeline_tag=image
 - Articles
 - [MuJoCo official documentation](https://mujoco.readthedocs.io/en/stable/overview.html)
 - [MuJoCo Python tutorial](https://colab.research.google.com/github/google-deepmind/mujoco/blob/main/python/tutorial.ipynb)
-- 
+
+## Important Notes
+Please keep in mind that:
+
+- The VLM does NOT control the robot directly, it generates _semantic reasoning_.
+
+- You are responsible for translating that reasoning into safe robot commands.
+
+- ALWAYS validate motion plans in simulation before running on real hardware.
