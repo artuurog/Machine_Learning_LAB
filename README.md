@@ -1,11 +1,18 @@
-# VLMs & Robots
+# Machine Learning Lab 2026
 
-This project focuses on the use of **Vision-Language Models (VLMs)** and **Robotics**, with the goal of understanding how these algorithms can be used to perceive, reason, and act in the physical world.
+## Vision-Language Models for Robotic Manipulation
 
-The main objectives of the project are:
-- to teach a robot pick-and-place operations through textual instructions,
-- to implement the obtained task plan both in simulation and in real world experiments on an ABB GoFa robot,
-- to bridge theory and practice through hands-on experimentation.
+This laboratory course introduces **Vision-Language Models (VLMs)** and their use for controlling a robotic manipulator.
+
+Students will design a system where:
+- A human provides a natural language instruction
+- A Vision-Language Model interprets the scene
+- The model generates a task plan
+- The plan is executed in:
+-- Simulation (MuJoCo)
+-- Real robot (ABB GoFa)
+
+The objective is to bridge machine learning, perception, and robot control in a structured workflow.
 
 ## Index
   
