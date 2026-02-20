@@ -8,6 +8,7 @@ Students will design a system where:
 - A human provides a natural language instruction
 - A Vision-Language Model interprets the scene
 - The model generates a task plan
+- Task plan is converted into robot actions (_x,y,z_ coordinates)
 - The plan is executed in:
     - Simulation (MuJoCo)
     - Real robot (ABB GoFa)
