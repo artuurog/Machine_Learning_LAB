@@ -128,9 +128,8 @@ The project is organized into the following phases:
     - Identify failure modes
 
 6. **Real Robot Deployment on ABB GoFa**
-
-Transfer validated pipeline to the physical robot.
-SAFETY AND VALIDATION ARE MANDATORY BEFORE EXECUTION!
+    Transfer validated pipeline to the physical robot.
+    SAFETY AND VALIDATION ARE MANDATORY BEFORE EXECUTION!
 
 7. **Evaluation and Analysis**  
    - Testing the system, analyzing performance, and discussing limitations and possible improvements
