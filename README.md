@@ -9,8 +9,8 @@ Students will design a system where:
 - A Vision-Language Model interprets the scene
 - The model generates a task plan
 - The plan is executed in:
--- Simulation (MuJoCo)
--- Real robot (ABB GoFa)
+    - Simulation (MuJoCo)
+    - Real robot (ABB GoFa)
 
 The objective is to bridge machine learning, perception, and robot control in a structured workflow.
 
