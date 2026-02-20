@@ -277,7 +277,7 @@ Structured output quality is more important than conversational ability. Find th
 ## Resources
 - [Vision Language Models Explained](https://huggingface.co/blog/vlms)
 - [Vision Language Models (Better, faster, stronger)](https://huggingface.co/blog/vlms-2025)
-- Articles
+- Demonstration-Free Robotic Control via LLM Agents [link](https://arxiv.org/abs/2601.20334)
 - [MuJoCo official documentation](https://mujoco.readthedocs.io/en/stable/overview.html)
 - [MuJoCo Python tutorial](https://colab.research.google.com/github/google-deepmind/mujoco/blob/main/python/tutorial.ipynb)
 
