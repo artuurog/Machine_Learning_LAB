@@ -153,7 +153,8 @@ Students are encouraged to extend or modify the provided materials as part of th
 
 
 ## Colab tutorial 
-The Colab notebook can be accessed here
+The Colab notebook can be accessed [here]().
+
 It demonstrates:
 
 1. Loading MuJoCo
