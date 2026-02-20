@@ -153,7 +153,7 @@ Students are encouraged to extend or modify the provided materials as part of th
 
 
 ## Colab tutorial 
-The Colab notebook can be accessed [here]().
+The Colab notebook can be accessed [here](https://github.com/artuurog/Machine_Learning_LAB/blob/main/Lab_example.ipynb).
 
 It demonstrates:
 
