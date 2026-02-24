@@ -15,7 +15,7 @@ Students will design a system where:
 
 The objective is to bridge machine learning, perception, and robot control in a structured workflow.
 
-## Learning Objectives
+## Intended Learning Outcomes
 
 By the end of this lab, you should be able to:
 1. Understand what a Vision-Language Model is and how it works.
@@ -25,6 +25,10 @@ By the end of this lab, you should be able to:
 5. Execute a task pipeline in simulation.
 6. Deploy the same logic to a real ABB GoFa robot.
 7. Evaluate limitations and failure cases.
+
+## Project Presentation
+
+You can find the PDF with the presentation of the project [here](https://github.com/artuurog/Machine_Learning_LAB/blob/main/project_presentation.pdf).
 
 ## Quick links
 - [Project workflow](https://github.com/artuurog/Machine_Learning_LAB/blob/main/README.md#project-workflow)
