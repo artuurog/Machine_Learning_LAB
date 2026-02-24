@@ -26,8 +26,8 @@ By the end of this lab, you should be able to:
 6. Deploy the same logic to a real ABB GoFa robot.
 7. Evaluate limitations and failure cases.
 
-## Repo structure
-  
+## Quick links
+- [Project workflow](https://github.com/artuurog/Machine_Learning_LAB/blob/main/README.md#project-workflow)
 - [Colab notebook](https://github.com/artuurog/Machine_Learning_LAB/blob/main/README.md#colab-tutorial)
 - [MuJoCo simulation environment](https://github.com/artuurog/Machine_Learning_LAB/blob/main/README.md#mujoco-simulation)
 - [API keys on Huggingface](https://github.com/artuurog/Machine_Learning_LAB/blob/main/README.md#getting-a-hugging-face-api-key)  
