@@ -287,7 +287,8 @@ Structured output quality is more important than conversational ability. Find th
 - [Tutorial - Image-based Visual Servo](https://visp-doc.inria.fr/doxygen/visp-daily/tutorial-ibvs.html)
 - [Eye-in-hand visual servoing](https://visp-doc.inria.fr/doxygen/visp-daily/tutorial_vs_eih.html)
 - [ABB GoFa user manual](https://search.abb.com/library/Download.aspx?DocumentID=3HAC077389-001&LanguageCode=en&DocumentPartId=&Action=Launch)
-
+- [What is Retrieval Augmented Generation (RAG)?](https://www.oracle.com/artificial-intelligence/generative-ai/retrieval-augmented-generation-rag/)
+  
 ## Important Notes
 Please keep in mind that:
 
