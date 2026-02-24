@@ -284,6 +284,7 @@ Structured output quality is more important than conversational ability. Find th
 - [A Tutorial on Visual Servo Control](https://faculty.cc.gatech.edu/~seth/ResPages/pdfs/HutHagCor96.pdf)
 - [Tutorial - Image-based Visual Servo](https://visp-doc.inria.fr/doxygen/visp-daily/tutorial-ibvs.html)
 - [Eye-in-hand visual servoing](https://visp-doc.inria.fr/doxygen/visp-daily/tutorial_vs_eih.html)
+- [ABB GoFa user manual](https://search.abb.com/library/Download.aspx?DocumentID=3HAC077389-001&LanguageCode=en&DocumentPartId=&Action=Launch)
 
 ## Important Notes
 Please keep in mind that:
