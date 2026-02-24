@@ -278,7 +278,9 @@ Structured output quality is more important than conversational ability. Find th
 ## Resources
 - [Vision Language Models Explained](https://huggingface.co/blog/vlms)
 - [Vision Language Models (Better, faster, stronger)](https://huggingface.co/blog/vlms-2025)
-- Demonstration-Free Robotic Control via LLM Agents [link](https://arxiv.org/abs/2601.20334)
+- Demonstration-Free Robotic Control via LLM Agents [article](https://arxiv.org/abs/2601.20334)
+- Scaffolding Coordinates to Promote Vision-Language Coordination in Large Multi-Modal Models [article](https://arxiv.org/abs/2402.12058)
+- Visual Prompting in Multimodal Large Language Models: A Survey [article](https://arxiv.org/abs/2409.15310)
 - [MuJoCo official documentation](https://mujoco.readthedocs.io/en/stable/overview.html)
 - [MuJoCo Python tutorial](https://colab.research.google.com/github/google-deepmind/mujoco/blob/main/python/tutorial.ipynb)
 - [A Tutorial on Visual Servo Control](https://faculty.cc.gatech.edu/~seth/ResPages/pdfs/HutHagCor96.pdf)
