@@ -178,13 +178,12 @@ Use it as reference for API formatting, prompt construction, image encoding.
 The model consists of an XML file and various .STL meshes of the robot parts.
 If you want to modify the `scene.xml` file, refer to the [MuJoCo XML Reference](https://mujoco.readthedocs.io/en/stable/XMLreference.html)
 
+---
 
 ## Getting a Hugging Face API Key
 
 This project uses models hosted on **Hugging Face**, a platform that provides access to many AI models through an API.  
 To use these models, you need a **Hugging Face API key** (also called an *access token*).
-
----
 
 ### What is an API key?
 
