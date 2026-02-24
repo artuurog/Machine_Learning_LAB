@@ -280,6 +280,9 @@ Structured output quality is more important than conversational ability. Find th
 - Demonstration-Free Robotic Control via LLM Agents [link](https://arxiv.org/abs/2601.20334)
 - [MuJoCo official documentation](https://mujoco.readthedocs.io/en/stable/overview.html)
 - [MuJoCo Python tutorial](https://colab.research.google.com/github/google-deepmind/mujoco/blob/main/python/tutorial.ipynb)
+- [A Tutorial on Visual Servo Control](https://faculty.cc.gatech.edu/~seth/ResPages/pdfs/HutHagCor96.pdf)
+- [Tutorial - Image-based Visual Servo](https://visp-doc.inria.fr/doxygen/visp-daily/tutorial-ibvs.html)
+- [Eye-in-hand visual servoing](https://visp-doc.inria.fr/doxygen/visp-daily/tutorial_vs_eih.html)
 
 ## Important Notes
 Please keep in mind that:
